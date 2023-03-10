@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --lg-font:'Roboto', sans-serif;
+    --sm-font:''Roboto Condensed', sans-serif;';
+    --orange:#f2a26f;
+    --pink:#ed9bad;
+    --blue:#63d0e5;
+    --yellow:#e9d06c;
+    --black:#000;
+    --transition:all 0.3s ease ;
+    --h1-background-color:pink;
+    --h2-background-color: yellow;
+    --h3-background-color:rgba(0, 0, 0, 0.462);
+    --text-color:white;
+    --padding:20px;
+    --margin:20px;
+    --padding-left:20px;
+    --padding-right:5px;
+    --padding-top:5px;
+    --padding-bottom:5px;
+    --margin:auto;
+    --margin-top:25px;
+    --margin-bottom:170px;
+    --margin-left:15px;
+    --margin-right:20px;
+    --font-size:40px;
+    --a--font-size:16px;
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --border:1px solid rgba(0, 0, 0, 0.38);
+    --border-radius: 20px;
+    --h1--font-size:50px;
+    --h2--font-size:40px;
+    --h3--font-size:30px;
+    --box-shadow:10px 20px 3px rgba(0, 0, 0, 0.279);
+    --p--font-size:19px;
+    --backgrgound:#f1fbff;
+    --bottom:220px;
+    --text-transform:uppercase;
+    --font-weight:500px;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--backgrgound);
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 400px;
+    align-items: center;
+}
+.carousel-caption{
+   margin-bottom: var(--margin-bottom);
+    z-index: 2;
+   
+}
+.carousel-caption h5{
+    font-size: var(--font-size);
+    text-transform: var(--text-transform);
+    letter-spacing: 2px;
+    margin-top: var(--margin-top);
+}
+.carousel-caption p{
+    width: 60%;
+    margin: var(--margin);
+    font-size: var(--p--font-size);
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: var(--a--font-size);
+    text-transform: var(--text-transform);
+    font-weight: var(--font-weight);
+}
+.navbar-light .navbar-brand{
+    color: var(--black);
+    font-size: var(--font-size);
+    background: var(--black);
+    text-transform: var(--text-transform);
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color:var(--black)
+}
+.navbar-light .navbar-nav .navabr-link{
+    color: var(--black);
+}
+.w-100{
+    height: 100vh;
+}
+.about-img img{
+    width: 300px;
+    height: 300px;
+}
+.servcies .card-body i{
+    font-size: var(--font-size);
+}
+.team .card-body i{
+    font-size: 20px;
+}
+.protfolio .card{
+    box-shadow: var(--box-shadow);
+}
+.team .card{
+    box-shadow: var(--box-shadow);
+}
+/* responsive css */
+@media(min-width:768px) and (max-width:991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+    .about-img img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .card{
+        margin: 30px;
+    }
+}
+@media(max-width:760px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        margin-bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 20px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 19px;
+    }
+    .about-img img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .card{
+        margin: 30px;
+    }
+}
